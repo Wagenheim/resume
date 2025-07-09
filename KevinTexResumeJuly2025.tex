@@ -1,0 +1,174 @@
+%-------------------------
+% Resume in Latex
+% Author : Kevin Wagenheim
+% Based off of: https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Kevin Wagenheim} \\ \vspace{1pt}
+    \small 609-703-2946 $|$ \href{mailto:wagenheimk@me.com}{\underline{wagenheimk@me.com}} $|$ 
+    \href{https://www.linkedin.com/in/kevinwagenheim/}{\underline{linkedin.com/in/kevinwagenheim}} $|$
+    \href{https://github.com/Wagenheim/}{\underline{github.com/Wagenheim}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {System and Cloud Administrator}{Jan. 2025 -- Present}
+      {Simple Syllabus}{Tampa, FL}
+      \resumeItemListStart
+        \resumeItem{Took ownership of AWS infrastructure in October 2023; officially promoted to System and Cloud Administrator in January 2025.​}
+        \resumeItem{Managed and deployed infrastructure using AWS services including RDS, ECS, EC2, Lambda, Batch, CloudFront, Step Functions, CloudWatch, and S3.}
+        \resumeItem{Built the company’s first CI/CD pipeline using Bitbucket Pipelines, significantly reducing deployment time and errors.​}
+        \resumeItem{Owned on-call support and resolution of all production-level issues, from system outages to degraded performance.​}
+        \resumeItem{Monitored PostgreSQL performance including background processes, schema integrity, and connection health.​}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Developer}{Apr. 2021 -- Jan. 2025}
+      {Simple Syllabus}{Tampa, FL}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained full stack applications using TypeScript, PHP, and PostgreSQL.​}
+        \resumeItem{Designed and integrated RESTful APIs, including third-party API integrations.}
+        \resumeItem{Optimized complex SQL queries to improve data access speed and reduce load times.}
+        \resumeItem{Built and optimized AngularJS components for the front end, resolving performance issues and bugs.}
+        \resumeItem{Participated in Agile sprints and planning sessions using Jira, collaborating with cross-functional teams.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Web Application Developer Trainee}{Apr. 2020 -- July 2020}
+      {Revature}{Tampa, FL}
+      \resumeItemListStart
+        \resumeItem{Trained in full stack development and cloud deployment workflows using Java, TypeScript, SQL, and AWS.}
+        \resumeItem{Created APIs using Springboot and front-end interfaces using ReactJS.​}
+        \resumeItem{Deployed applications to the cloud using AWS.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {AWS Certified Cloud Practitioner}{December 2023}
+      {Credential ID: 968GCF1L5JE41457}{}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Tampa}{Tampa, FL}
+      {Bachelor of Science in Mathematics}{Aug. 2015 -- May 2019}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Palworld Server Discord Bot} $|$ \emph{TypeScript, NodeJS, AWS EC2}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Utilized Discord's node package to create a Discord bot to manage a Palworld multiplayer server.}
+            \resumeItem{Deployed the bot and server on AWS EC2 instances.}
+            \resumeItem{Created automated backups of the server files in AWS S3.}
+            \resumeItem{Abstracted commands and errors to follow OOP best practices.}
+            \resumeItem{Minimized cost of running the application to keep it under \$50}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, PHP, Bash, Java} \\
+     \textbf{Frameworks}{: AngularJS, NodeJS, ReactJS, Slim, JUnit, Express, Springboot} \\
+     \textbf{Databases}{: PostgreSQL, SQL, DynamoDB} \\
+     \textbf{Cloud Services}{: AWS EC2, AWS ECS, AWS RDS, AWS Lambda, AWS S3, AWS CloudWatch, AWS Step Functions, AWS Batch, Shell scripting, CI/CD, Infrastructure Monitoring} \\
+     \textbf{Tools}{: Bitbucket Pipelines, Docker, Git, Postman, Jira, REST APIs, Agile, Terminal-based tooling}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
